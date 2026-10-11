@@ -16,7 +16,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     env:
-      RELEASE_TAG: ${{ inputs.relase_tag }}
+      RELEASE_TAG: ${{ inputs.release_tag }}
     steps:
       - name: Check release tag
         run: test -n "$RELEASE_TAG"
